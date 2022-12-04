@@ -1,7 +1,8 @@
+from pathlib import Path
 from typing import List
 
-
-with open("day2_input.txt") as file:
+dir_path = Path(__file__).resolve().parent
+with open(f"{dir_path}/day2_input.txt") as file:
     guide = [line.split(" ") for line in file.read().split("\n")]
 
 scores = {"X": 1, "Y": 2, "Z": 3, "A": 1, "B": 2, "C": 3}

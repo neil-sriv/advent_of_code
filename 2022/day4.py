@@ -1,8 +1,9 @@
-from itertools import permutations, chain
-from typing import Any, List
+from itertools import chain, permutations
+from pathlib import Path
+from typing import List
 
-
-with open("day4_input.txt") as file:
+dir_path = Path(__file__).resolve().parent
+with open(f"{dir_path}/day4_input.txt") as file:
     data = [line.split(",") for line in file.read().splitlines()]
 
 

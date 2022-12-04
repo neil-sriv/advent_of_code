@@ -1,7 +1,8 @@
+from pathlib import Path
 from typing import List
 
-
-with open("day3_input.txt") as file:
+dir_path = Path(__file__).resolve().parent
+with open(f"{dir_path}/day3_input.txt") as file:
     data = file.read().splitlines()
 
 
