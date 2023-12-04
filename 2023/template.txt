@@ -1,6 +1,4 @@
-
 from pathlib import Path
-import os
 
 
 def main() -> None:
@@ -19,5 +17,6 @@ def part1(data: list[str]) -> int:
 def part2(data: list[str]) -> int:
     pass
 
+
 if __name__ == "__main__":
-	main()
+    main()
