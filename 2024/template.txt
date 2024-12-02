@@ -1,0 +1,22 @@
+from pathlib import Path
+
+
+def main() -> None:
+    dir_path = Path(__file__).resolve().parent
+    with open(f"{dir_path}/{Path(__file__).stem}_input.txt") as file:
+        data = file.read().splitlines()
+
+    print(f"Part 1: {part1(data)}")
+    print(f"Part 2: {part2(data)}")
+
+
+def part1(data: list[str]) -> int:
+    pass
+
+
+def part2(data: list[str]) -> int:
+    pass
+
+
+if __name__ == "__main__":
+    main()
