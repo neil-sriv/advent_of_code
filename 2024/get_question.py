@@ -10,7 +10,7 @@ def get_question():
         data = file.read()
     question = data[data.find("---") : data.find("Answer:")]
     # if data.find("--- Part Two ---") != -1:
-        # question += data[data.find("--- Part Two ---") :]
+    # question += data[data.find("--- Part Two ---") :]
     with open(filename, "w") as file:
         file.write(question)
 
