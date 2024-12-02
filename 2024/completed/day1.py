@@ -131,7 +131,7 @@
    Once again consider your left and right lists. What is their similarity
    score?
 
-   
+
 """
 
 from pathlib import Path
@@ -159,6 +159,7 @@ def part1(data: list[str]) -> int:
     while left and right:
         val += abs(heapq.heappop(left) - heapq.heappop(right))
     return val
+
 
 def part2(data: list[str]) -> int:
     c: Counter[str] = Counter()
