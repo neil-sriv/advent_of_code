@@ -1,0 +1,17 @@
+services:
+  db:
+    container_name: pg-db
+    image: postgres:17
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - 9004:5432
+    expose:
+      - 5432
+    environment:
+      - POSTGRES_USER=santa
+      - POSTGRES_PASSWORD=santa
+      - POSTGRES_DB=santa_workshop
+
+volumes:
+  pgdata:
